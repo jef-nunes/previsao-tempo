@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(96, 141, 167);
+  background-size: cover;
+}
+
+.bg-container{
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("../images/background-1.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.central{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.central h1{
+  user-select: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #52727e;
+  background-color: rgba(45, 147, 173, 0.521);
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(72, 197, 255);
+  width: fit-content;
+}
+
+.caixa-maior {
+  background: rgb(227, 231, 233);
+  /* opacity: 0.8; */
+  border-radius: 25px;
+  padding: 20px;
+  /* responsivo */
+  width: 95%; /*Largura tela menores*/
+  max-width: 450px; /*Largura tela maiores*/
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(95, 139, 160);
+}
+
+.caixa-media {
+  margin-top: 30px;
+}
+
+.caixa-maior input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  background: #8597a821;
+  color: rgb(13, 59, 87);
+  width: calc(100% - 50px);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(180, 193, 207);
+}
+
+.botao-busca {
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 10px;
+  background: #e9e3e3;
+  cursor: pointer;
+  float: right;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(184, 184, 184);
+}
+
+.img-busca {
+  width: 20px;
+}
+
+.cidade {
+  color: rgb(80, 139, 167);
+  font-size: 24px;
+}
+
+.temp {
+  font-size: 20px;
+  color: rgb(80, 139, 167);
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.caixa-menor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: rgb(80, 139, 167);
+    gap: 20px;
+}
+
+.umidade{
+  color: rgb(80, 139, 167);
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.texto-previsao{
+  color: rgb(80, 139, 167);
+    text-transform: capitalize;
+    font-weight: bold;
+}
